@@ -30,16 +30,58 @@
     <nav class="clearfix">
       <ul class="clearfix">
         <li><a href="story.html">story</a></li>
-        <li><a href="information.html">wedding information</a></li>
+        <li><a href="information.html">information</a></li>
         <li><a href="activities.html">activities</a></li>
-        <li><a href="selfies.html">selfies</a></li>
+        <li><a href="registry.html">registry</a></li>
       </ul>
     </nav>
-    <h1>Steph</h1>
-    <span class="script">and</span>
-    <h1>Nick</h1>
-    <h2>are getting married</h2>
   </header>
+
+    <div class="headline">
+      <h1>Steph</h1>
+      <span class="script">and</span>
+      <h1>Nick</h1>
+      <h2>are getting married!</h2>
+    </div>
+
+
+    <ul class="selfies clearfix">
+      <li><img src="images/AppleCiderDonuts.jpg" /></li>
+      <li><img src="images/Atlanta.jpg" /></li>
+      <li><img src="images/Bangkok.jpg" /></li>
+      <li><img src="images/Camping.jpg" /></li>
+      <li><img src="images/CannonBeach.jpg" /></li>
+      <li><img src="images/CarmelCA.jpg" /></li>
+      <li><img src="images/CommAveBoston.jpg" /></li>
+      <li><img src="images/DevilPunchBowlOregon.jpg" /></li>
+      <li><img src="images/HalfDomeYosemite.jpg" /></li>
+      <li><img src="images/HangZhou.jpg" /></li>
+      <li><img src="images/Hawaii.jpg" /></li>
+      <li><img src="images/InaSleepingBag.jpg" /></li>
+      <li><img src="images/July4thCornDogs.jpg" /></li>
+      <li><img src="images/LakeTahoe.jpg" /></li>
+      <li><img src="images/ManoaFalls.jpg" /></li>
+      <li><img src="images/MopedingatSanJuanIslands.jpg" /></li>
+      <li><img src="images/MovingDay.jpg" /></li>
+      <li><img src="images/MtRainier.jpg" /></li>
+      <li><img src="images/Napa.jpg" /></li>
+      <li><img src="images/OlympicPeninsula2.jpg" /></li>
+      <li><img src="images/OlympicSculpture Park.jpg" /></li>
+      <li><img src="images/OregonSandDunes.jpg" /></li>
+      <li><img src="images/PointReyes.jpg" /></li>
+      <li><img src="images/Portland.jpg" /></li>
+      <li><img src="images/SanFrancisco.jpg" /></li>
+      <li><img src="images/Seattle.JPG" /></li>
+      <li><img src="images/SnowboardinginSantaFe.jpg" /></li>
+      <li><img src="images/SnowLake.jpg" /></li>
+      <li><img src="images/Snowshoeing.jpg" /></li>
+      <li><img src="images/Vancouver.jpg" /></li>
+      <li><img src="images/Waikiki.jpg" /></li>
+      <li><img src="images/WashingtonTulipFestival.jpg" /></li>
+
+
+    </ul>
+
 
   <footer>
     <h3>Contact</h3>
@@ -49,5 +91,15 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
 
     <script src="js/main.js"></script>
+
+    <script>
+    $( document ).ready(function() {
+      var ul = document.querySelector('ul.selfies');
+      for (var i = ul.children.length; i >= 0; i--) {
+          ul.appendChild(ul.children[Math.random() * i | 0]);
+      }
+    });
+
+    </script>
   </body>
 </html>

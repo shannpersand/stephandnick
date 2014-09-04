@@ -69,7 +69,7 @@ textarea {
  Author's custom styles
  ========================================================================== */
 body {
-  background-color: #EBF5DC;
+  background-color: #F2FCE3;
   color: #3EB985;
   font-family: 'futura-pt', sans-serif;
   margin: 0;
@@ -78,28 +78,50 @@ body {
   text-align: center;
 }
 
+.headline {
+  padding: 20px 0;
+}
+
+.headline h1 {
+  font-size: 6em;
+  margin: 0;
+  color: #3EB985;
+}
+
+.headline h2 {
+  color: #F0942D;
+  margin: 0;
+  font-size: 3em;
+}
+
 a {
   color: #F0942D;
   text-decoration: none;
 }
 
+.active {
+  color: #78BEB4;
+  text-decoration: underline;
+}
+
 h1 {
   text-transform: uppercase;
-  font-size: 5em;
+  font-size: 2.75em;
   margin: 0;
   line-height: 1;
-  margin: 20px 0 0;
+  margin: 60px 0 0;
 }
 
 .script {
   color: #373553;
-  font: 400 2em 'reklame-script';
+  font: 400 3em 'reklame-script';
   text-transform: lowercase;
+  line-height: .5;
 }
 
 h2 {
   color: #373553;
-  font: 400 1em 'reklame-script';
+  font: 400 2.5em 'reklame-script';
 }
 
 nav {
@@ -120,10 +142,31 @@ nav ul li {
 
 li a {
   padding: 10px 3%;
+  color: #F0942D;
+  font-weight: 500;
+  font-size: 1.25em;
+}
+
+small {
+  color: #33996E;
+  font-size: 1.1em;
+  margin-top: 20px;
+  display: block;
 }
 
 section, article {
   padding: 3%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 1.25em;
+  text-align: left;
+  width: 100%;
+  padding: 0 3%;
+  margin: 20px auto;
+  max-width: 700px;
 }
 
 iframe {
@@ -136,15 +179,36 @@ h3 {
 }
 
 h4 {
+  color: #373553;
   text-transform: uppercase;
   font-size: 2em;
-  margin: 40px 0 10px;
+  margin: 75px 0 0;
+  border-bottom: 2px solid #373553;
+  border-top: 2px solid #373553;
 }
 
 h5 {
+  color: #373553;
   margin: 0 0 5px;
   font-weight: 400;
-  font-size: 1.2em;
+  font-size: 2.5em;
+  font-style: italic;
+  font-family: 'reklame-script';
+}
+
+h5.address {
+  font-weight: 400;
+  color: #F0942D;
+  font-style: normal;
+  font-size: 1.5em;
+  font-family: 'futura-pt';
+}
+
+.address a span {
+  font-family: 'futura-pt';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 120%;
 }
 
 .hotels {
@@ -155,15 +219,74 @@ h5 {
 
 .hotels li {
   margin-bottom: 40px;
+  padding: 30px 3% 0;
+  border-top: 2px solid white;
+  text-align: left;
+}
+
+.hotels li:first-child {
+  border-top: none;
 }
 
 .hotels li a {
+  color: #373553;
   display: block;
   padding: 0;
   margin: 0 0 2px;
 }
 
+.hotels li a:hover, .hotels li a:active {
+  color: #494887;
+  text-decoration: underline;
+}
 
+.selfies {
+  padding: 0 3%;
+  margin: 0;
+  list-style-type: none;
+  display: block;
+  width: 100%;
+}
+
+.selfies li {
+  background-color: blue;
+  display: inline-block;
+  float: left;
+  width: 25%;
+  margin: 0;
+  border: 0;
+}
+
+.selfies li img {
+  width: 100%;
+}
+
+footer {
+  background-color: #78BEB4;
+  color: white;
+  padding: 20px 0 40px;
+  margin-top: 90px;
+}
+
+footer h3 {
+  font-size: 3em;
+  font-family: 'reklame-script';
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 3%;
+}
+
+footer p {
+  max-width: 700px;
+  padding: 0 6%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer a {
+  color: #373553;
+  display: block;
+}
 
 
 
@@ -172,8 +295,25 @@ h5 {
  Media Queries
  ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 900px) {
+  .headline h1 {
+    display: inline-block;
+    font-size: 8em;
+  }
 
+  .script {
+    position: relative;
+    top: -15px;
+    font-size: 4em;
+  }
+
+  .headline h2 {
+    font-size: 5em;
+  }
+
+  iframe {
+    height: 600px;
+  }
 }
 
 @media print,

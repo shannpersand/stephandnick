@@ -78,6 +78,20 @@ body {
   text-align: center;
 }
 
+.date {
+  width: 100%;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.5em;
+  opacity: .9;
+  position: fixed;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  top: 0;
+  z-index: 10;
+}
+
 .headline {
   padding: 20px 0;
 }
@@ -126,7 +140,7 @@ h2 {
 
 nav {
   background: white;
-  padding: 10px 0 20px;
+  padding: 40px 0 20px;
 }
 
 nav ul {
@@ -141,10 +155,10 @@ nav ul li {
 }
 
 li a {
-  padding: 10px 3%;
+  padding: 10px 2%;
   color: #F0942D;
   font-weight: 500;
-  font-size: 1.25em;
+  font-size: 1.15em;
 }
 
 small {
@@ -166,6 +180,11 @@ p {
   width: 100%;
   padding: 0 3%;
   margin: 20px auto;
+  max-width: 700px;
+}
+
+.video {
+  width: 100%;
   max-width: 700px;
 }
 

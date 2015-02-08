@@ -306,6 +306,28 @@ footer a {
   display: block;
 }
 
+.registry-link {
+  background-color: #F0942D;
+  color: #fff;
+  display:  inline-block;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 25px;
+  border: 3px solid #D0720B;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.registry-link:hover {
+  background-color: #D0720B;
+}
+
+.registry-link:active {
+  background-color: #F0942D;
+}
+
 
 
 
@@ -335,6 +357,10 @@ footer a {
 
   h1 {
     font-size: 4em;
+  }
+
+  .registry-link {
+    font-size: 30px;
   }
 }
 
